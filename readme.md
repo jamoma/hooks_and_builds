@@ -2,7 +2,7 @@
 
 This repository is used by the bec's server.
 
-When JamomaCore gets a new push on "master" it will compile the source, update the download page of the website and push to JamomaWebsite
+When JamomaCore gets a new push on "master" it will compile the source, update the download page of the website and push to JamomaWebsite "master" branch
 
 Then JamomaWebsite gets a new push on "master" it will compile the site source code, and push to the website
 
