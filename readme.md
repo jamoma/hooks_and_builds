@@ -6,6 +6,9 @@ When JamomaCore gets a new push on "master" it will compile the source, update t
 
 Then JamomaWebsite gets a new push on "master" it will compile the site source code, and push to the website
 
+## instructions
+
+ - setup your credentials on builds/site/build.rb
 
 ## credits
 

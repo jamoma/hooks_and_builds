@@ -1,11 +1,10 @@
 #!/usr/bin/env ruby
 
-# updating the website based on latest master version
+require 'rubygems'
+require 'net/ssh'
 
-unless File.directory?("JamomaWebSite")
-	puts `git@github.com:jamoma/JamomaWebSite.git`
+# setup your keys, or hardcode a password?? be or not to be?
+
+s = Net::SSH.start( "server", "user", :password => "password" ) do |ssh|
+  ssh.exec "cd /Groups/Jamoma/Sites/JamomaWebSite && git pull"
 end
-
-puts `cd JamomaWebSite && nanoc`
-puts `cd JamomaWebSite && git commit -am "building latest version of the website"`
-puts `cd JamomaWebSite && git push origin master`
