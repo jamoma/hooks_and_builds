@@ -6,6 +6,8 @@ unless File.directory?("Jamoma")
 	puts `git clone git@github.com:jamoma/Jamoma.git`
 end
 
-puts `cd Jamoma`
-puts `cd Jamoma/Tools && ruby update.rb`
-puts `cd Jamoma/Tools && ruby all.rb master Deployment clean install && ruby installer.rb`
+puts `cd Jamoma && git submodule update --init && git pull origin master`
+puts `cd Jamoma/Tools && build.rb clean Deployment clang`
+
+# cd Implementations/Max/Jamoma
+# compress and upload to website repository

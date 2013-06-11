@@ -4,8 +4,9 @@
 # $2 is the branch
 # but we'll simply trigger an .sh in another folder
 
-cd ../../builds/site
-ruby build.rb $2
+cd cd /Groups/Jamoma/Sites/JamomaWebSite
+git pull
+nanoc compile
 
 #cd $1
 #git pull origin $2
