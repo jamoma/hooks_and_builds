@@ -4,7 +4,7 @@
 # $2 is the branch
 # but we'll simply trigger an .sh in another folder
 
-cd cd /Groups/Jamoma/Sites/JamomaWebSite
+cd /Groups/Jamoma/Sites/JamomaWebSite
 git pull
 nanoc compile
 
