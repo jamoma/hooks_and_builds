@@ -25,4 +25,4 @@ A simple php hook for github was used, you can check the original repository [he
 
 
 
-## made during Jamoma's 2013 workshop / developers meeting in Albi, France
+## made @ Jamoma's 2013 workshop. Albi, France
